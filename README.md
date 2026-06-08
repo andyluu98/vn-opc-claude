@@ -107,6 +107,7 @@ Tạo vault (thư mục) cho DN với cấu trúc:
 
 | Lệnh | Tác dụng |
 |---|---|
+| `/vn-onboard "<mô tả DN + ngành>"` | Thiết lập DN theo ngành: kích hoạt pack có sẵn, hoặc **sinh phòng ban + pack + template mới** (CEO duyệt) cho ngành lạ. |
 | `/vn-status` | In trạng thái vault: vision, ICP, state, task gần đây. (Chạy nhanh, kiểm tra plugin sống.) |
 | `/vn-run "<brief>"` | Chạy đầy đủ: đọc Brain → debate → quyết định → tài liệu. Có 3 điểm dừng CEO duyệt. |
 | `/vn-meeting <task_folder>` | Chạy lại debate cho 1 task đã có. |
@@ -119,6 +120,16 @@ Tạo vault (thư mục) cho DN với cấu trúc:
 ```
 
 Lần đầu chạy tới bước debate, nếu Claude hỏi xác nhận dùng **Workflow** → đồng ý.
+
+### Onboard theo ngành (`/vn-onboard`)
+
+```
+/vn-onboard "spa trị liệu cao cấp ở Q1 HCM"
+```
+- Ngành **có pack sẵn** (F&B / Retail / Tech-SaaS) → kích hoạt ngay: thêm phòng ban + role + luật ngành.
+- Ngành **lạ** → agent `pack-architect` đề xuất phòng ban mới (vd 13-spa, 14-trị-liệu) + luật liên quan → **CEO duyệt** → sinh agent + `pack.yaml` + template → lưu vào `knowledge/packs/` (tái dùng cho DN khác) → kích hoạt cho vault qua `.vncoderc`.
+
+Sau onboard, `/vn-run` sẽ debate với **12 phòng nền + phòng ngành** vừa thêm.
 
 ---
 

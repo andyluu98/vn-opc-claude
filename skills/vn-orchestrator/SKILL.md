@@ -54,6 +54,11 @@ Phân loại quy mô:
 
 **Không cố định số phòng.** Chọn đúng phòng liên quan, không triệu tập phòng không liên quan chỉ để đủ số.
 
+**Active departments từ .vncoderc:** Trước khi fan-out, đọc `<vault>/.vncoderc`:
+- Nếu có `active_departments` → router CHỈ chọn phòng trong danh sách đó (gồm 12 phòng nền + phòng pack ngành đã kích hoạt qua `/vn-onboard`).
+- Nếu KHÔNG có `.vncoderc` hoặc thiếu key `active_departments` → mặc định dùng 12 phòng nền (01–12).
+- Router vẫn tự quyết SỐ phòng theo độ phức tạp brief (SIMPLE/COMPLEX/STRATEGIC), nhưng chỉ chọn trong `active_departments` — không gọi phòng ngoài danh sách đó dù brief có liên quan.
+
 ---
 
 ## Bước 4 — PAUSE 1: Làm rõ (nếu cần)
