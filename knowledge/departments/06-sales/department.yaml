@@ -1,0 +1,28 @@
+code: 06-sales
+name_vn: Kinh doanh & Bán hàng
+tier: 3
+description: Phòng Kinh doanh & Bán hàng.
+agents:
+- sales-lead
+- account-manager
+- sdr
+default_speaker: sales-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - account
+  - key account
+  - kh lớn
+  agent: account-manager
+- keywords:
+  - lead
+  - prospect
+  - tìm khách
+  agent: sdr
+aliases_vn:
+- Phòng Kinh doanh
+- Kinh doanh
+- Sales

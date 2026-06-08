@@ -1,0 +1,18 @@
+code: 05-operations
+name_vn: Hành chính & Vận hành
+tier: 2
+description: Phòng Hành chính & Vận hành.
+agents:
+- ops-manager
+- vendor-manager
+- office-admin
+default_speaker: ops-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Vận hành
+- Vận hành
+- Operations
+- Ops

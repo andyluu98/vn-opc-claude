@@ -1,0 +1,28 @@
+code: 03-finance
+name_vn: Tài chính & Kế toán
+tier: 2
+description: Phòng Tài chính & Kế toán.
+agents:
+- cfo
+- accountant
+- financial-analyst
+default_speaker: cfo
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - kế toán
+  - phiếu thu chi
+  - hạch toán
+  agent: accountant
+- keywords:
+  - phân tích
+  - báo cáo tc
+  agent: financial-analyst
+aliases_vn:
+- Phòng Tài chính
+- Tài chính
+- Kế toán
+- Finance

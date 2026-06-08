@@ -1,0 +1,16 @@
+code: 12-growth
+name_vn: Tăng trưởng & Đầu tư
+tier: 5
+description: Phòng Tăng trưởng & Đầu tư.
+agents:
+- growth-strategist
+- fundraising-lead
+default_speaker: growth-strategist
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Tăng trưởng
+- Tăng trưởng
+- Growth

@@ -1,0 +1,31 @@
+code: 09-product-tech
+name_vn: Sản phẩm & Công nghệ
+tier: 4
+description: Phòng Sản phẩm & Công nghệ.
+agents:
+- product-manager
+- tech-lead
+- security-officer
+default_speaker: product-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - security
+  - bảo mật
+  - vuln
+  agent: security-officer
+- keywords:
+  - tech
+  - kỹ thuật
+  - infra
+  agent: tech-lead
+aliases_vn:
+- Phòng Sản phẩm Công nghệ
+- Sản phẩm
+- Công nghệ
+- Product
+- Tech
+- Engineering

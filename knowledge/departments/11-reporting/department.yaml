@@ -1,0 +1,18 @@
+code: 11-reporting
+name_vn: Báo cáo & Đo lường
+tier: 4
+description: Phòng Báo cáo & Đo lường.
+agents:
+- data-analyst
+- dashboard-designer
+default_speaker: data-analyst
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Báo cáo
+- Báo cáo
+- Reporting
+- BI
+- Analytics

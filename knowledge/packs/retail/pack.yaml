@@ -1,0 +1,21 @@
+name: Retail Pack
+code: retail
+version: 0.1.0
+description: "Cho shop online, e-commerce, D2C VN"
+target_industries: ["ecommerce", "shopify", "marketplace-shopee", "marketplace-lazada", "tiktok-shop"]
+adds_departments:
+  - 13-warehouse
+  - 14-logistics
+extends_departments:
+  - target: 06-sales
+    add_agents: ["marketplace-manager", "livestream-host"]
+  - target: 07-marketing
+    add_agents: ["product-photographer", "affiliate-manager"]
+  - target: 08-customer
+    add_agents: ["cs-online-shop", "return-handler"]
+  - target: 09-product-tech
+    add_agents: ["ecommerce-platform-mgr", "pixel-tracking-officer"]
+brain_template: brain-template/
+compliance_refs:
+  - "Luật Bảo vệ Quyền lợi NTD 2010"
+  - "Nghị định 52/2013 Thương mại điện tử"

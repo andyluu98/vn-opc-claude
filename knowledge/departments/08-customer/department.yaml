@@ -1,0 +1,18 @@
+code: 08-customer
+name_vn: Khách hàng & Dịch vụ
+tier: 3
+description: Phòng Khách hàng & Dịch vụ.
+agents:
+- cs-lead
+- support-tier1
+- retention-officer
+default_speaker: cs-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Chăm sóc Khách hàng
+- Khách hàng
+- CSKH
+- CS

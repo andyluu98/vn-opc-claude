@@ -1,0 +1,16 @@
+code: 02-strategy
+name_vn: Chiến lược & Kế hoạch
+tier: 1
+description: Phòng Chiến lược & Kế hoạch.
+agents:
+- strategy-lead
+- market-researcher
+default_speaker: strategy-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Chiến lược
+- Chiến lược
+- Strategy

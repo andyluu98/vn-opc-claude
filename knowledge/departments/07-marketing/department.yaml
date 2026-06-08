@@ -1,0 +1,36 @@
+code: 07-marketing
+name_vn: Marketing & Thương hiệu
+tier: 3
+description: Phòng Marketing & Thương hiệu.
+agents:
+- brand-manager
+- content-creator
+- ads-specialist
+- seo-specialist
+default_speaker: brand-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - ads
+  - quảng cáo
+  - fb
+  - google
+  - campaign
+  agent: ads-specialist
+- keywords:
+  - seo
+  - rank
+  - organic
+  agent: seo-specialist
+- keywords:
+  - content
+  - viết bài
+  - editorial
+  agent: content-creator
+aliases_vn:
+- Phòng Marketing
+- Marketing
+- MKT

@@ -1,0 +1,28 @@
+code: 04-people
+name_vn: Nhân sự & Con người
+tier: 2
+description: Phòng Nhân sự & Con người.
+agents:
+- hr-manager
+- recruiter
+- training-coordinator
+default_speaker: hr-manager
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+routing_rules:
+- keywords:
+  - tuyển dụng
+  - jd
+  - phỏng vấn
+  agent: recruiter
+- keywords:
+  - đào tạo
+  - training
+  agent: training-coordinator
+aliases_vn:
+- Phòng Nhân sự
+- Nhân sự
+- HR
+- People

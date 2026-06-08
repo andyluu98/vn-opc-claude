@@ -1,0 +1,18 @@
+code: 10-training
+name_vn: Đào tạo & Phát triển
+tier: 4
+description: Phòng Đào tạo & Phát triển.
+agents:
+- training-lead
+- mentor
+- knowledge-curator
+default_speaker: training-lead
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Đào tạo
+- Đào tạo
+- Training
+- L&D

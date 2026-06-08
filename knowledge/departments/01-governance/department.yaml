@@ -1,0 +1,17 @@
+code: 01-governance
+name_vn: Quản trị & Pháp lý
+tier: 1
+description: Phòng Quản trị & Pháp lý.
+agents:
+- legal-officer
+- compliance-checker
+default_speaker: legal-officer
+refs_folder: refs/
+depends_on: []
+debate_role:
+  default: pro
+aliases_vn:
+- Phòng Pháp chế
+- Quản trị
+- Pháp lý
+- Governance
