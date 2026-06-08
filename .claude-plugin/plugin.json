@@ -1,0 +1,6 @@
+{
+  "name": "vn-opc-claude",
+  "version": "0.1.0",
+  "description": "AI OS cho DN Việt — 12 phòng ban debate → quyết định → sinh .docx/.xlsx, chạy bằng Claude Code subscription (không API key).",
+  "author": { "name": "L'MAK Group" }
+}
